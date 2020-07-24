@@ -443,7 +443,7 @@ def send_email(tem,wea,sender,pwd,recevier):
 
     qqmail = smtplib.SMTP()
 
-    qqmail.connect(mailhost,25)
+    qqmail.connect(mailhost,25)#云服务器ban掉了端口25 要使用ssl
 
     qqmail.login(sender,pwd)
 
